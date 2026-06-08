@@ -35,29 +35,8 @@ This project implements the agentic workflow pattern in a smaller two-agent form
 
 ## Agentic Workflow
 
-```text
-YARA-L rule, detection idea, TTP, or attacker action
-|
-|-- Log Generator Agent
-|   |
-|   |-- Interprets the input
-|   |-- Parses detection predicates or attack behavior
-|   |-- Generates synthetic Google SecOps UDM JSON events
-|   |-- Produces positive, negative, or edge-case scenarios
-|
-|-- Log Review Agent
-|   |
-|   |-- Treats generated logs as draft output
-|   |-- Checks semantic fidelity, UDM shape, and detection satisfaction
-|   |-- Corrects timestamps, joins, field paths, thresholds, and realism gaps
-|   |-- Calls out ingestion readiness and tenant-specific assumptions
-|
-|-- Detection validation
-    |
-    |-- Test corrected events against expected rule behavior
-    |-- Compare expected results with Google SecOps behavior
-    |-- Iterate on the detection, events, or assumptions
-```
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/c6677c71-f1fc-4ad2-b523-4f18a64a9cd1" />
+
 
 ## Log Generator Agent
 
